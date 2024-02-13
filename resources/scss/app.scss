@@ -1,1 +1,69 @@
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+@import "_partials/variables.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  font-family: "Lato";
+}
+
+.text-primary {
+    color: $primary-color;
+}
+
+.bg-primary {
+    background-color: $primary-color;
+}
+
+.ec-border-primary {
+    border: 3px solid $primary-color;
+}
+
+.ec-nav-link {
+    color: $text-color;
+    border-bottom: 3px solid $white;
+    padding: 45px 0;
+
+    &:hover {
+        color: $primary-color;
+
+        border-bottom: 3px solid $primary-color;
+    }
+}
+
+#top-nav {
+    background-color: $primary-color;
+
+    #info {
+        text-align: end;
+        a {
+            all: unset;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+}
+
+#jumbotron {
+    background-image: url("../img/jumbotron.jpg");
+    height: 400px;
+    background-size: cover;
+}
+
+.ec-img {
+    height: 180px;
+    object-fit: cover;
+}
+
+#ec-top-footer {
+    background-image: url("../img/footer-bg.jpg");
+    background-size: cover;
+    .ec-img-footer {
+        width: 400px;
+        object-fit: cover;
+    }
+}
+
+.ec-box-menu {
+    height: 400px;
+}
